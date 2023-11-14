@@ -1,0 +1,34 @@
+.custom-shadow {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  }
+
+  .custom-header {
+    background-color: #00379d;
+    height: 10vh;
+  }
+
+  .custom-text {
+    color: #fff;
+  }
+
+  .custom-div {
+    height: '100vh - 56px';
+  }
+
+  .custom-title {
+    color: #00379d !important;
+  }
+
+  .background {
+    height: calc(100vh - 56px);
+    /* 56px es la altura estimada del header, ajusta según tu diseño */
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    color: #555; /* Cambia este valor al color que desees */
+  }

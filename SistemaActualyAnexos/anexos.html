@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PP2</title>
+  <!-- Agrega el enlace a Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../css/stylePaginaPruba.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+  <link rel="stylesheet" href="../css/compact-gallery.css">
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Función reutilizable para cargar el contenido
+      function loadContent(url, containerId) {
+        fetch(url)
+          .then(response => response.text())
+          .then(data => {
+            // Inserta el contenido en el contenedor especificado
+            document.getElementById(containerId).innerHTML = data;
+          })
+          .catch(error => console.error('Error al cargar el contenido:', error));
+      }
+
+      // Llama a la función para cargar el encabezado
+      loadContent('../header.html', 'header-container');
+
+      // Llama a la función para cargar el pie de página
+      loadContent('../footer.html', 'footer-container');
+    });
+  </script>
+
+</head>
+
+<body>
+
+  <!-- Container para el encabezado -->
+  <div id="header-container"></div>
+
+  <div class="container" style="margin-top: -10; width: 100%;">
+    <div class="row flex-lg-row-reverse align-items-center g-1 py-1 ">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="img/anexos.avif" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="70%" height="50%"
+          loading="lazy">
+      </div>
+      <div class="col-lg-6 animate__animated animate__fadeInUp">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 custom-title">Anexos</h1>
+        <p class="lead">Bienvenido a la sección de anexos de G2 Accesorios. Aquí encontrarás una recopilación de
+          documentos relevantes que respaldan y complementan la información sobre el sistema. Desde comprobantes
+          generados por el sistema hasta planillas Excel utilizadas para la gestión, esta sección proporciona una visión
+          completa y transparente de la documentación respaldatoria del negocio.</p>
+
+      </div>
+    </div>
+
+    <div class="container px-4 py-5" id="icon-grid">
+      <h2 class="pb-2 border-bottom animate__animated animate__fadeInUp">Planillas y Comprobantes</h2>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+        <!-- Ejemplo para un ítem (repite esto para cada ítem) -->
+        <div class="col d-flex align-items-start animate__animated animate__fadeInUp">
+          <img src="../img/planillaAsistencia.png" class="d-block flex-shrink-0 img-fluid me-3" alt="Bootstrap Themes"
+            width="50" height="20" loading="lazy">
+          <div>
+            <h3 class="mb-0 fs-4"  style="color: #00379d;">Planilla de Asistencia</h3>
+            <p>La planilla de asistencia de empleados es un documento en Excel que registra la presencia y el tiempo
+              laboral de cada empleado.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+              Ver más
+            </button>
+          </div>
+        </div>
+        <!-- Fin del ejemplo -->
+        <div class="col d-flex align-items-start animate__animated animate__fadeInUp">
+          <img src="../img/comprobanteReparacion.jpg" class="d-block flex-shrink-0 img-fluid me-3"
+            alt="Bootstrap Themes" width="50" height="20" loading="lazy">
+          <div>
+            <h3 class="mb-0 fs-4"  style="color: #00379d;">Planilla de Reparaciones</h3>
+            <p>La planilla de reparaciones en Excel es una herramienta de gestión detallada para registrar y organizar
+              información clave sobre los servicios de reparación de dispositivos.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">
+              Ver más
+            </button>
+          </div>
+        </div>
+        <!-- Fin del ejemplo -->
+        <div class="col d-flex align-items-start animate__animated animate__fadeInUp">
+          <img src="../img/comprobanteReparacion.png" class="d-block flex-shrink-0 img-fluid me-3"
+            alt="Bootstrap Themes" width="50" height="20" loading="lazy">
+          <div>
+            <h3 class="mb-0 fs-4"  style="color: #00379d;">Comprobante de Reparacion</h3>
+            <p>Un comprobante de reparación es un documento que certifica la realización de servicios de reparación en
+              un dispositivo específico.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">
+              Ver más
+            </button>
+          </div>
+        </div>
+        <!-- Fin del ejemplo -->
+        <div class="col d-flex align-items-start animate__animated animate__fadeInUp">
+          <img src="../img/comprobanteVenta.png" class="d-block flex-shrink-0 img-fluid me-3" alt="Bootstrap Themes"
+            width="50" height="20" loading="lazy">
+          <div>
+            <h3 class="mb-0 fs-4" style="color: #00379d;">Comprobante de venta</h3>
+            <p>Un comprobante de venta es un documento que certifica la transacción de compra-venta entre un vendedor y
+              un cliente.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal4">
+              Ver más
+            </button>
+          </div>
+        </div>
+        <!-- Fin del ejemplo -->
+      </div>
+    </div>
+
+
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg d-flex justify-content-center align-items-center">
+        <div class="modal-content">
+          <div class="container-fluid">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+              style="position: absolute; right: 15px; top: 15px;"></button>
+            <div class="row">
+              <div class="col-md-6 p-0">
+                <div class="bg-img rounded-left" style="height: 60vh; 
+                    border-top-left-radius: 8px; 
+                    border-bottom-left-radius: 8px; 
+                    overflow: hidden; background-color: black;">
+                  <img src="../img/PlanillaAsistencia.jpeg" alt="Planilla de Asistencia"
+                    style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+
+
+              </div>
+              <div class="col-md-6 py-5 px-sm-5 my-auto">
+                <h2 class="pt-sm-3">Planilla de Asistencia de Empleados</h2>
+                <p class="text-muted">
+                  La planilla de asistencia de empleados es un documento en Excel que registra la presencia y el tiempo
+                  laboral de cada empleado. Contiene detalles como nombre, fecha, hora de entrada, hora de salida y
+                  espacio para observaciones. Esta herramienta simplifica el seguimiento de la asistencia, siendo
+                  crucial para la gestión de recursos humanos y la eficiencia operativa en la empresa.
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg d-flex justify-content-center align-items-center">
+        <div class="modal-content">
+          <div class="container-fluid">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+              style="position: absolute; right: 15px; top: 15px;"></button>
+            <div class="row">
+              <div class="col-md-6 p-0">
+                <div class="bg-img rounded-left"
+                  style="background-image: url('../img/PlanillaReparaciones.jpeg'); background-size: cover;
+                  background-position: center; height: 60vh; border-top-left-radius: 8px; border-bottom-left-radius: 8px;">
+                </div>
+              </div>
+              <div class="col-md-6 py-5 px-sm-5 my-auto">
+                <h2 class="pt-sm-3">Planilla de Reparaciones</h2>
+                <p class="text-muted">
+                  La planilla de reparaciones en Excel es una herramienta para gestionar servicios de reparación.
+                  Registra datos como fecha de ingreso, cliente, modelo del celular, descripción de la reparación, fecha
+                  de retiro, turno, local, medio de pago, entre otros. Facilita el seguimiento eficiente de los
+                  servicios, gestionando tiempos y recursos para ofrecer atención personalizada a los clientes.
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg d-flex justify-content-center align-items-center">
+        <div class="modal-content">
+          <div class="container-fluid">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+              style="position: absolute; right: 15px; top: 15px;"></button>
+            <div class="row">
+              <div class="col-md-6 p-0">
+                <div class="bg-img rounded-left"
+                  style="background-image: url('../img/ComprobanteReparacion.jpeg'); background-size: cover;
+                  background-position: center; height: 60vh; border-top-left-radius: 8px; border-bottom-left-radius: 8px;">
+                </div>
+              </div>
+              <div class="col-md-6 py-5 px-sm-5 my-auto">
+                <h2 class="pt-sm-3">Comprobante de Reparacion</h2>
+                <p class="text-muted">
+                  Un comprobante de reparación certifica la realización de servicios en un dispositivo. Incluye detalles
+                  como fecha, cliente, descripción del servicio (modelo, reparación), fechas de ingreso/retiro, turno,
+                  responsable, costo y medio de pago. Este documento actúa como evidencia formal, asegurando
+                  transparencia y comunicación efectiva entre el proveedor y el cliente.
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg d-flex justify-content-center align-items-center">
+        <div class="modal-content">
+          <div class="container-fluid">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+              style="position: absolute; right: 15px; top: 15px;"></button>
+            <div class="row">
+              <div class="col-md-6 p-0">
+                <div class="bg-img rounded-left"
+                  style="background-image: url('../img/comprobanteVenta.jpeg'); background-size: cover;
+                  background-position: center; height: 60vh; border-top-left-radius: 8px; border-bottom-left-radius: 8px;">
+                </div>
+              </div>
+              <div class="col-md-6 py-5 px-sm-5 my-auto">
+                <h2 class="pt-sm-3">Comprobante de Venta</h2>
+                <p class="text-muted">
+                  Un comprobante de venta certifica una transacción entre vendedor y cliente, esencial para el registro
+                  detallado de la operación. Incluye información como fecha, detalles del vendedor, del cliente,
+                  descripción de productos, cantidad, precio unitario, total a pagar, método de pago, y otros detalles
+                  relevantes. No solo actúa como evidencia legal y registro contable, sino que también genera confianza
+                  entre vendedor y comprador.
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+  </div>
+  </div>
+
+
+
+
+
+  <section class="gallery-block cards-gallery">
+    <div class="container">
+      <div class="heading">
+        <h2 class="pb-2 border-bottom">Imagenes del Local Fisico</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="card border-0 transform-on-hover">
+            <a class="lightbox" href="../img/local13.jpeg">
+              <img src="../img/local13.jpeg" alt="Card Image" class="card-img-top">
+            </a>
+
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="card border-0 transform-on-hover">
+            <a class="lightbox" href="../img/local12.jpeg">
+              <img src="../img/local12.jpeg" alt="Card Image" class="card-img-top">
+            </a>
+
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="card border-0 transform-on-hover">
+            <a class="lightbox" href="../img/local10.jpeg">
+              <img src="../img/local10.jpeg" alt="Card Image" class="card-img-top">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="card border-0 transform-on-hover">
+            <a class="lightbox" href="../img/local9.jpeg">
+              <img src="../img/local9.jpeg" alt="Card Image" class="card-img-top">
+            </a>
+
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="card border-0 transform-on-hover">
+            <a class="lightbox" href="../img/local8.jpeg">
+              <img src="../img/local8.jpeg" alt="Card Image" class="card-img-top">
+            </a>
+
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="card border-0 transform-on-hover">
+            <a class="lightbox" href="../img/local11.jpeg">
+              <img src="../img/local11.jpeg" alt="Card Image" class="card-img-top">
+            </a>
+
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="card border-0 transform-on-hover">
+            <a class="lightbox" href="../img/local7.jpeg">
+              <img src="../img/local7.jpeg" alt="Card Image" class="card-img-top">
+            </a>
+
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="card border-0 transform-on-hover">
+            <a class="lightbox" href="../img/local5.jpeg">
+              <img src="../img/local5.jpeg" alt="Card Image" class="card-img-top">
+            </a>
+
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="card border-0 transform-on-hover">
+            <a class="lightbox" href="../img/local4.jpeg">
+              <img src="../img/local4.jpeg" alt="Card Image" class="card-img-top">
+            </a>
+
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="card border-0 transform-on-hover">
+            <a class="lightbox" href="../img/local1.jpeg">
+              <img src="../img/local1.jpeg" alt="Card Image" class="card-img-top">
+            </a>
+
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="card border-0 transform-on-hover">
+            <a class="lightbox" href="../img/local3.jpeg">
+              <img src="../img/local3.jpeg" alt="Card Image" class="card-img-top">
+            </a>
+
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="card border-0 transform-on-hover">
+            <a class="lightbox" href="../img/local6.jpeg">
+              <img src="../img/local6.jpeg" alt="Card Image" class="card-img-top">
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+  <script>
+    baguetteBox.run('.cards-gallery', { animation: 'slideIn' });
+  </script>
+
+
+
+  <!-- Container para el footer -->
+  <div id="footer-container"></div>
+
+  <!-- Agrega el enlace a Bootstrap JS y Popper.js (requerido por Bootstrap) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+
+    });
+  </script>
+</body>
+
+</html>
