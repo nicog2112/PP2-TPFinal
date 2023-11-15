@@ -1,0 +1,36 @@
+body {
+    /* Ruta a tu imagen de fondo */
+    background-image: url('img/fondopag2.jpg');
+
+    /* Asegúrate de que la imagen cubra toda la página */
+    background-size: contain;
+
+    /* Centra la imagen de fondo */
+    background-position: center;
+
+    /* Repite la imagen si no cubre todo el elemento */
+    background-repeat: repeat;
+
+    /* Aplica un efecto de distorsión */
+    filter: url('#distorsion');
+
+    /* Cambia el color del texto a blanco */
+    color: #feffff;
+}
+
+h2 {
+    color: #05050c;
+    /* Cambia este valor al color que prefieras */
+}
+
+.custom-header {
+    background-color: #00379d;
+}
+
+.custom-text {
+    color: #fff;
+}
+
+.custom-div {
+    height: '100vh - 56px';
+}

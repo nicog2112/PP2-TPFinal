@@ -1,0 +1,17 @@
+h2 {
+    color: #05050c;
+    /* Cambia este valor al color que prefieras */
+
+}
+
+.custom-header {
+    background-color: #00379d;
+}
+
+.custom-text {
+    color: #fff;
+}
+
+.custom-div {
+    height: '100vh - 56px';
+}
