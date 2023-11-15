@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>pp2</title>
+
+
+  <!-- Agrega el enlace a Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../css/stylePaginaPruba.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Función reutilizable para cargar el contenido
+      function loadContent(url, containerId) {
+        fetch(url)
+          .then(response => response.text())
+          .then(data => {
+            // Inserta el contenido en el contenedor especificado
+            document.getElementById(containerId).innerHTML = data;
+          })
+          .catch(error => console.error('Error al cargar el contenido:', error));
+      }
+
+      // Llama a la función para cargar el encabezado
+      loadContent('../header.html', 'header-container');
+
+      // Llama a la función para cargar el pie de página
+      loadContent('../footer.html', 'footer-container');
+    });
+  </script>
+</head>
+
+<body>
+  <!-- Container para el encabezado -->
+  <div id="header-container"></div>
+
+
+  <!-- encabezado -->
+  <section>
+    <div class="container mt-5 border-bottom border-2 border-primary p-1">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <h2 class="text-center mb-4">SISTEMA PROPUESTO</h2>
+
+          <p class="lead">Para solucionar las problemáticas mencionadas en el local de venta de accesorios y reparación
+            de
+            celulares “G2 Accesorios”, se propone implementar un sistema de gestión integral que aborde los aspectos del
+            control de inventario, gestión de ventas, seguimiento de reparaciones y recopilación de datos precisos y
+            confiables.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-fluid">
+          <h1 class="h1  text-center fw-bolder text-uppercase  custom-title">
+            El sistema contará con los siguientes módulos
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+          <!-- División principal en dos partes -->
+          <div class="col-md-6">
+              <!-- Subdivisión de la parte izquierda -->
+              <div class="row">
+                  <div class="col-md-6">
+                      <!-- Contenido de la subparte izquierda -->
+                      <ul>
+                        <li>Control de Inventario: funciones para registrar las entradas y salidas de productos, seguimiento de
+                          las
+                          existencias, niveles de reordenamiento y generar alertas automáticas.</li>
+                          </ul>
+                  </div>
+                  <div class="col-md-6">
+                      <!-- Contenido de la subparte derecha -->
+                      <p>img</p>
+                  </div>
+              </div>
+          </div>
+          <!-- <div class="col-md-6 fondo-derecha">
+              Contenido de la parte derecha
+              <p>Contenido de la parte derecha</p>
+          </div> -->
+      </div>
+  </div>
+  </section>
+  <ul>
+    <li>Control de Inventario: funciones para registrar las entradas y salidas de productos, seguimiento de
+      las
+      existencias, niveles de reordenamiento y generar alertas automáticas.</li>
+    <li>Venta: registro y procesamiento de transacciones de venta de accesorios, servicios de reparación,
+      generación de facturas, etc.</li>
+    <li>Reparaciones: registro de detalles de cada reparación, asignación de números de seguimiento o tickets,
+      y
+      generación de informes de seguimiento para el personal técnico.</li>
+    <li>Reportes: generación de informes, análisis de ventas, inventario y rendimiento del negocio.</li>
+  </ul>
+
+  <p>Esto permitirá tener una visión clara de los resultados, identificar tendencias, tomar decisiones basadas
+    en
+    datos y mejorar la planificación estratégica.</p>
+
+  <!-- Container para el footer -->
+  <div id="footer-container"></div>
+
+
+
+
+  <!-- Agrega el script de Bootstrap y cualquier otro script necesario aquí -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+  <!-- Agrega el enlace a Bootstrap JS y Popper.js (requerido por Bootstrap) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+
+    });
+  </script>
+</body>
+
+</html>
