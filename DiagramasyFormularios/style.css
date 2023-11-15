@@ -1,0 +1,29 @@
+.img-izquierda {
+    /* float: center; */
+    margin-right: 20px;
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0.5);
+    border: 1px solid rgb(124, 62, 62);
+}
+
+.img-derecha {
+    /* float: right; */
+    margin-left: 20px;
+    border: 1px solid rgb(124, 62, 62)
+    /* border-style: solid; */
+}
+.img-central{
+    margin-right: 20px;
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0.5);
+    border: 1px solid rgb(124, 62, 62);
+    display:block;
+    margin:auto;
+  
+}
+
+p {
+    font-family: serif;
+    text-align: justify;
+    line-height: 150%;
+}
