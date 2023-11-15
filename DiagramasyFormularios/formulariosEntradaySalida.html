@@ -1,14 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script> -->
 <!DOCTYPE html>
 <html lang="es">
 
@@ -28,7 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
     <link rel="stylesheet" href="../css/compact-gallery.css">
     <link rel="stylesheet" href="style.css">
-    <title>DIAGRAMAS Y FORMULARIOS</title>
+    <title>FORMULARIOS</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
@@ -64,11 +53,41 @@
             <div class="col">
                 <div class="accordion" id="accordionExample">
                     <!-- <div class="accordion-item"> -->
-                        <h3 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 custom-title" data-aos="fade-up">FORMULARIOS DE ENTRADA Y SALIDA DE DATOS</h3> 
-                        <!-- <h3 class="accordion-header" style="background-color: #a9d1ee;">
+                    <h3 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 custom-title" data-aos="fade-up">
+                        FORMULARIOS DE ENTRADA Y SALIDA DE DATOS</h3>
+                    <!-- <h3 class="accordion-header" style="background-color: #a9d1ee;">
                             <b>FORMULARIOS DE ENTRADA Y SALIDA DE DATOS</b>
                         </h3> -->
-                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <h4><b>CLIENTES</b></h4>
+                </button>
+            </div>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <i>
+                        <p class="lead">Este formulario permitirá la recopilación de información acerca de los clientes,
+                            como
+                            ser su nombre y apellido, tipo de documento, DNI, fecha de nacimiento, sexo,
+                            CUIL/CUIT. Contará con un apartado que permitirá borrar todas las respuestas que han
+                            sido completado, el cual se encuentra al final del registro. Además, dispondrá de
+                            dos botones, el primero será para cancelar el formulario (color rojo), en tanto que
+                            el otro permitirá enviar los datos (color azul), el cual se irá almacenando en la
+                            base de datos.</p>
+                    </i>
+                    <div class="col d-flex align-items-start animate__animated animate__fadeInUp">
+                    <img src="IMAGENES/CLIENTES.png" width=25% class="img-central"></div>
+                    <br>
                 </div>
             </div>
         </div>
@@ -77,24 +96,29 @@
 
         <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
-                <h2 class="accordion-header">
+                <div class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        <b>CLIENTES</b>
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <h4><b>DOMICILIO</b></h4>
                     </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                </div>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                         <i>
-                            <p>Este formulario permitirá la recopilación de información acerca de los clientes, como
-                                ser su nombre y apellido, tipo de documento, DNI, fecha de nacimiento, sexo,
-                                CUIL/CUIT. Contará con un apartado que permitirá borrar todas las respuestas que han
-                                sido completado, el cual se encuentra al final del registro. Además, dispondrá de
-                                dos botones, el primero será para cancelar el formulario (color rojo), en tanto que
-                                el otro permitirá enviar los datos (color azul), el cual se irá almacenando en la
-                                base de datos.</p>
+                            <p class="lead">El formulario de domicilio será utilizado para obtener información de la
+                                residencia
+                                de la
+                                persona. En ella se registrarán el país, provincia, localidad, barrio, calle y
+                                altura, o
+                                bien la manzana y casa; o el piso y departamento, dependiendo del lugar de
+                                residencia.
+                                Habrá un apartado donde se podrá añadir una descripción general de cualquier
+                                información
+                                que se considere necesario. También dispondrá de un apartado para borrar todas las
+                                respuestas, como los botones de cancelar y enviar</p>
                         </i>
-                        <img src="IMAGENES/CLIENTES.png" width=25% class="img-central">
+                        <div class="col d-flex align-items-start animate__animated animate__fadeInUp">
+                        <img src="IMAGENES/DOMICILIO.jpg" width=20% class="img-central"></div>
                         <br>
                     </div>
                 </div>
@@ -104,28 +128,30 @@
 
             <div class="accordion accordion-flush" id="accordionFlushExample">
                 <div class="accordion-item">
-                    <h2 class="accordion-header">
+                    <div class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            <b>DOMICILIO</b>
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            <h4><b>CONTACTO</b></h4>
                         </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                    </div>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
                         data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
                             <i>
-                                <p>El formulario de domicilio será utilizado para obtener información de la residencia
-                                    de la
-                                    persona. En ella se registrarán el país, provincia, localidad, barrio, calle y
-                                    altura, o
-                                    bien la manzana y casa; o el piso y departamento, dependiendo del lugar de
-                                    residencia.
-                                    Habrá un apartado donde se podrá añadir una descripción general de cualquier
-                                    información
-                                    que se considere necesario. También dispondrá de un apartado para borrar todas las
-                                    respuestas, como los botones de cancelar y enviar</p>
+                                <p class="lead">Este formulario permitirá almacenar la forma en cómo se podrá contactar
+                                    con una
+                                    persona, por ejemplo, un cliente. El mismo presenta un apartado donde se va
+                                    poder
+                                    seleccionar el tipo de contacto, que puede ser un número de celular, correo
+                                    electrónico, entre otros. En función del tipo de contacto elegido le
+                                    corresponderá
+                                    un determinado valor. También dispone de los botones de borrado de respuestas,
+                                    de
+                                    cancelar y de enviar.</p>
                             </i>
-                            <img src="IMAGENES/DOMICILIO.jpg" width=20% class="img-izquierda">
+                            <div class="col d-flex align-items-start animate__animated animate__fadeInUp"></div>
+                            <img src="IMAGENES/CONTACTO.jpg" width=30% class="img-central"></div>
                             <br>
                         </div>
                     </div>
@@ -135,28 +161,28 @@
 
                 <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-item">
-                        <h2 class="accordion-header">
+                        <div class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseThree" aria-expanded="false"
-                                aria-controls="flush-collapseThree">
-                                <b>CONTACTO</b>
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour">
+                                <h4><b>GENÉRICO</b></h4>
                             </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        </div>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
                             data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 <i>
-                                    <p>Este formulario permitirá almacenar la forma en cómo se podrá contactar con una
-                                        persona, por ejemplo, un cliente. El mismo presenta un apartado donde se va
-                                        poder
-                                        seleccionar el tipo de contacto, que puede ser un número de celular, correo
-                                        electrónico, entre otros. En función del tipo de contacto elegido le
-                                        corresponderá
-                                        un determinado valor. También dispone de los botones de borrado de respuestas,
+                                    <p class="lead">Este formulario será utilizado para los procesos de alta, baja y
+                                        modificación
+                                        (ABM), donde se agregarán nombre o alguna descripción, como ser, abm de tipo
                                         de
-                                        cancelar y de enviar.</p>
+                                        contacto, país, provincia, rubro, marca, entre otros. Así como en los casos
+                                        anteriores, dispone de los botones de borrado de respuestas, de cancelar y
+                                        de
+                                        enviar.</p>
                                 </i>
-                                <img src="IMAGENES/CONTACTO.jpg" width=30% class="img-izquierda">
+                                <div class="col d-flex align-items-start animate__animated animate__fadeInUp"></div>
+                                <img src="IMAGENES/GENERICO.jpg" width=25% class="img-central"></div>
                                 <br>
                             </div>
                         </div>
@@ -166,26 +192,30 @@
 
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item">
-                            <h2 class="accordion-header">
+                            <div class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseFour" aria-expanded="false"
-                                    aria-controls="flush-collapseFour">
-                                    <b>GENÉRICO</b>
+                                    data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                    aria-controls="flush-collapseFive">
+                                    <h4><b>PRODUCTOS</b></h4>
                                 </button>
-                            </h2>
-                            <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            </div>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse"
                                 data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">
                                     <i>
-                                        <p>Este formulario será utilizado para los procesos de alta, baja y modificación
-                                            (ABM), donde se agregarán nombre o alguna descripción, como ser, abm de tipo
-                                            de
-                                            contacto, país, provincia, rubro, marca, entre otros. Así como en los casos
-                                            anteriores, dispone de los botones de borrado de respuestas, de cancelar y
-                                            de
-                                            enviar.</p>
+                                        <p class="lead">Este formulario va a permitir el registro de los productos que
+                                            dispone el
+                                            local, como así de los nuevos que ingresan. Permitirá almacenar el
+                                            nombre
+                                            del producto, precio, rubro, marca, stock disponible, stock mínimo,
+                                            cualquier descripción que sea necesario, color, código de barra e imagen
+                                            del
+                                            producto. También presenta los botones de borrado de respuestas, de
+                                            cancelar
+                                            y de enviar.</p>
                                     </i>
-                                    <img src="IMAGENES/GENERICO.jpg" width=25% class="img-izquierda">
+                                    <div class="col d-flex align-items-start animate__animated animate__fadeInUp"></div>
+                                    <img src="IMAGENES/PRODUCTOS.png" width=25% class="img-central"></div>
                                     <br>
                                 </div>
                             </div>
@@ -195,28 +225,67 @@
 
                         <div class="accordion accordion-flush" id="accordionFlushExample">
                             <div class="accordion-item">
-                                <h2 class="accordion-header">
+                                <div class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapseFive" aria-expanded="false"
-                                        aria-controls="flush-collapseFive">
-                                        <b>PRODUCTOS</b>
+                                        data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                        aria-controls="flush-collapseSix">
+                                        <h4><b>REPARACIONES</b></h4>
                                     </button>
-                                </h2>
-                                <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                </div>
+                                <div id="flush-collapseSix" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">
                                         <i>
-                                            <p>Este formulario va a permitir el registro de los productos que dispone el
-                                                local, como así de los nuevos que ingresan. Permitirá almacenar el
-                                                nombre
-                                                del producto, precio, rubro, marca, stock disponible, stock mínimo,
-                                                cualquier descripción que sea necesario, color, código de barra e imagen
-                                                del
-                                                producto. También presenta los botones de borrado de respuestas, de
-                                                cancelar
-                                                y de enviar.</p>
+                                            <p class="lead">En reparaciones nos vamos a encontrar con tres vistas: en la
+                                                primera
+                                                se
+                                                completan los datos del dispositivo, falla, diagnóstico inicial,
+                                                costo
+                                                de la reparación y fecha de entrega cuando el equipo este reparado.
+                                                La
+                                                segunda vista es para cargar imágenes del equipo a reparar, no es
+                                                obligatorio, por lo que se puede pasar a la siguiente pestaña sin
+                                                completar el campo. La última, es donde se cargan los datos del
+                                                cliente.
+                                            </p>
                                         </i>
-                                        <img src="IMAGENES/PRODUCTOS.png" width=25% class="img-izquierda">
+                                        <i>
+                                            <p class="lead">Allí se presenta el selector de búsqueda de clientes, si el
+                                                mismo ya
+                                                está registrado, se lo busca, selecciona, y con ello se rellenarán
+                                                todos
+                                                los inputs o cuadraditos y selectores con los datos del cliente. Los
+                                                mismos son de solo lectura, o sea no se pueden modificar; ahora en
+                                                el
+                                                caso de que se quiera añadir un nuevo cliente se dispone de un
+                                                botón, al
+                                                lado del selector, que habilita todos los cuadraditos y selectores
+                                                para
+                                                poder escribir.</p>
+                                        </i>
+                                        <i>
+                                            <p class="lead">En la parte de contacto también se dispone de dos botones
+                                                para añadir
+                                                o
+                                                eliminar los distintos contactos. Una vez que se hayan completados
+                                                todos
+                                                los campos obligatorios se da en finalizar, se guarda el cliente y
+                                                queda
+                                                vinculado con la reparación. Finalmente, se genera el comprobante
+                                                que es
+                                                entregado al cliente.
+                                            </p>
+                                        </i>
+                                        <div class="col d-flex align-items-start animate__animated animate__fadeInUp">
+                                        <img src="IMAGENES/REPARACIONESI.jpg" width=37%
+                                            class="img-central">
+                                        <img src="IMAGENES/REPARACIONESII.jpg" width=37%
+                                            class="img-central">
+                                    </div>
+                                    <br>
+                                    <div class="col d-flex align-items-start animate__animated animate__fadeInUp"></div>
+                                        <img src="IMAGENES/REPARACIONESIII.jpg" width=40%
+                                            class="img-central"></div>
                                         <br>
                                     </div>
                                 </div>
@@ -226,61 +295,89 @@
 
                             <div class="accordion accordion-flush" id="accordionFlushExample">
                                 <div class="accordion-item">
-                                    <h2 class="accordion-header">
+                                    <div class="accordion-header">
                                         <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseSix"
-                                            aria-expanded="false" aria-controls="flush-collapseSix">
-                                            <b>REPARACIONES</b>
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven"
+                                            aria-expanded="false" aria-controls="flush-collapseSeven">
+                                            <h4><b>VENTAS</b></h4>
                                         </button>
-                                    </h2>
-                                    <div id="flush-collapseSix" class="accordion-collapse collapse"
+                                    </div>
+                                    <div id="flush-collapseSeven" class="accordion-collapse collapse"
                                         data-bs-parent="#accordionFlushExample">
                                         <div class="accordion-body">
                                             <i>
-                                                <p>En reparaciones nos vamos a encontrar con tres vistas: en la primera
-                                                    se
-                                                    completan los datos del dispositivo, falla, diagnóstico inicial,
-                                                    costo
-                                                    de la reparación y fecha de entrega cuando el equipo este reparado.
-                                                    La
-                                                    segunda vista es para cargar imágenes del equipo a reparar, no es
-                                                    obligatorio, por lo que se puede pasar a la siguiente pestaña sin
-                                                    completar el campo. La última, es donde se cargan los datos del
-                                                    cliente.
-                                                </p>
-                                            </i>
-                                            <i>
-                                                <p>Allí se presenta el selector de búsqueda de clientes, si el mismo ya
-                                                    está registrado, se lo busca, selecciona, y con ello se rellenarán
-                                                    todos
-                                                    los inputs o cuadraditos y selectores con los datos del cliente. Los
-                                                    mismos son de solo lectura, o sea no se pueden modificar; ahora en
+                                                <p class="lead">El formulario de venta cuenta con un selector con
+                                                    buscador donde
                                                     el
-                                                    caso de que se quiera añadir un nuevo cliente se dispone de un
-                                                    botón, al
-                                                    lado del selector, que habilita todos los cuadraditos y selectores
-                                                    para
-                                                    poder escribir.</p>
-                                            </i>
-                                            <i>
-                                                <p>En la parte de contacto también se dispone de dos botones para añadir
-                                                    o
-                                                    eliminar los distintos contactos. Una vez que se hayan completados
-                                                    todos
-                                                    los campos obligatorios se da en finalizar, se guarda el cliente y
-                                                    queda
-                                                    vinculado con la reparación. Finalmente, se genera el comprobante
-                                                    que es
-                                                    entregado al cliente.
+                                                    empleado del comercio puede introducir el código o nombre del
+                                                    producto, se añade la cantidad del mismo, se presiona el botón
+                                                    “agregar producto” y cada uno de ello se irá añadiendo en la
+                                                    tabla
+                                                    inferior, el cual, también, presentará la opción de modificar la
+                                                    cantidad de producto que se ha ingresado. También dispone con un
+                                                    botón para eliminar el producto cargado. Terminado con el
+                                                    proceso se
+                                                    le da a “confirmar”.
                                                 </p>
                                             </i>
-                                            <img src="IMAGENES/REPARACIONESI.jpg" height="380" width="380"
-                                                class="img-izquierda">
-                                            <img src="IMAGENES/REPARACIONESII.jpg" height="380" width="380"
-                                                class="img-izquierda">
-                                            <img src="IMAGENES/REPARACIONESIII.jpg" height="380" width="380"
-                                                class="img-izquierda">
+                                            <i>
+                                                <p class="lead">
+                                                    La acción anterior desplegará un “modal”, es decir, una nueva
+                                                    ventana que contará con tres nuevas vistas. La primera es para
+                                                    que
+                                                    se complete con los datos del cliente, dispone de un selector
+                                                    con
+                                                    buscador de la misma forma que la carga de productos. Si el
+                                                    cliente
+                                                    desea algún tipo de factura se lo debe registrar, si ya lo esta
+                                                    se
+                                                    lo busca y los campos de nombre, apellido y DNI se completan de
+                                                    manera automática. Luego, se selecciona el tipo de pago a
+                                                    efectuar,
+                                                    es decir, si será mediante débito, efectivo, entre otros; de ahí
+                                                    se
+                                                    elige el tipo de factura, que puede ser ticket, A, B, C, etc. En
+                                                    caso de que el cliente no desee factura quedará como “consumidor
+                                                    final” que es la opción que estará marcada por defecto.
+                                                </p>
+                                            </i>
+                                            <i>
+                                                <p class="lead">
+                                                    Si el cliente es nuevo, se dispone de botón “agregar nuevo
+                                                    cliente”,
+                                                    el cual va a derivar a la segunda pestaña donde estará el
+                                                    formulario
+                                                    de alta de cliente. Allí se completarán todos los datos, y al
+                                                    guardar, se regresará a la pestaña anterior. Una vez que se haya
+                                                    completado con todos los campos, se presiona “continuar”.
+                                                </p>
+                                            </i>
+                                            <i>
+                                                <p class="lead">
+                                                    Esta acción lo llevará a la última pestaña, donde se mostrará un
+                                                    resumen de todo lo anterior. En esta pestaña se visualizará el
+                                                    subtotal, descuento (en caso de haya por el medio de pago
+                                                    seleccionado), y el total a abonar. Por último, se presiona el
+                                                    botón
+                                                    “confirmar” y el sistema generará la factura, ticket o el tipo
+                                                    de
+                                                    factura que se haya seleccionado.
+                                                </p>
+                                            </i>
+                                            <div
+                                                class="col d-flex align-items-start animate__animated animate__fadeInUp">
+                                                <img src="IMAGENES/VENTASI.jpg" width=40% class="img-central">
+                                                <img src="IMAGENES/VENTASII.jpg" width=45% class="img-central">
+                                            </div>
                                             <br>
+                                            <div
+                                                class="col d-flex col d-flex align-items-start animate__animated animate__fadeInUp">
+                                                <img src="IMAGENES/VENTASIII.jpg" width=45% class="img-central">
+                                                <br>
+                                                <br>
+                                                <img src="IMAGENES/VENTASIV.jpg" width=40% class="img-central">
+                                                <br>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -289,84 +386,71 @@
 
                                 <div class="accordion accordion-flush" id="accordionFlushExample">
                                     <div class="accordion-item">
-                                        <h2 class="accordion-header">
+                                        <div class="accordion-header">
                                             <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven"
-                                                aria-expanded="false" aria-controls="flush-collapseSeven">
-                                                <b>VENTAS</b>
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseEight"
+                                                aria-expanded="false" aria-controls="flush-collapseEight">
+                                                <h4><b>COMPRAS</b></h4>
                                             </button>
-                                        </h2>
-                                        <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                                        </div>
+                                        <div id="flush-collapseEight" class="accordion-collapse collapse"
                                             data-bs-parent="#accordionFlushExample">
                                             <div class="accordion-body">
                                                 <i>
-                                                    <p>El formulario de venta cuenta con un selector con buscador donde
+                                                    <p class="lead">El formulario de compra dispondrá de un selector con
+                                                        buscador,
+                                                        donde un empleado seleccionará el producto que desee
+                                                        adquirir
+                                                        para el local, la cantidad y el precio de compra. Se
+                                                        presionará
+                                                        el botón “agregar producto” y se irá añadiendo en la tabla
+                                                        inferior, en el cual, se podrá modificar la cantidad de
+                                                        producto
+                                                        si se ha cometido algún error, además del lado derecho, se
+                                                        halla
+                                                        un botón para el producto que se ha cargado. A lado del
+                                                        buscador, se dispone de un botón “añadir”, cuya función
+                                                        consiste
+                                                        en agregar al inventario o lista de productos actuales,
+                                                        algún
+                                                        producto que no esté registrado. Allí se completarán los
+                                                        campos
+                                                        correspondientes al formulario de productos. Terminado este
+                                                        proceso se presiona “guardar”. Esta acción lo llevará a la
+                                                        pestaña de inicio, y si no hay que realizar ninguna
+                                                        modificación, se le da a “confirmar”.
+                                                    </p>
+                                                </i>
+                                                <i>
+                                                    <p class="lead">
+                                                        Esto lo dirigirá a una nueva pestaña, donde se seleccionará
                                                         el
-                                                        empleado del comercio puede introducir el código o nombre del
-                                                        producto, se añade la cantidad del mismo, se presiona el botón
-                                                        “agregar producto” y cada uno de ello se irá añadiendo en la
-                                                        tabla
-                                                        inferior, el cual, también, presentará la opción de modificar la
-                                                        cantidad de producto que se ha ingresado. También dispone con un
-                                                        botón para eliminar el producto cargado. Terminado con el
-                                                        proceso se
-                                                        le da a “confirmar”.
+                                                        proveedor al que se realizará la compra. En caso de que se
+                                                        trate
+                                                        de uno nuevo, se dispone del botón “agregar nuevo
+                                                        proveedor”, el
+                                                        cual lo llevará al formulario correspondiente, y allí se
+                                                        completarán los datos que corresponda. Terminada la acción
+                                                        se da
+                                                        a “guardar”, y retorna a la pestaña anterior. Con los campos
+                                                        completado, y el total a pagar, se da a “confirmar compra”.
                                                     </p>
                                                 </i>
-                                                <i>
-                                                    <p>
-                                                        La acción anterior desplegará un “modal”, es decir, una nueva
-                                                        ventana que contará con tres nuevas vistas. La primera es para
-                                                        que
-                                                        se complete con los datos del cliente, dispone de un selector
-                                                        con
-                                                        buscador de la misma forma que la carga de productos. Si el
-                                                        cliente
-                                                        desea algún tipo de factura se lo debe registrar, si ya lo esta
-                                                        se
-                                                        lo busca y los campos de nombre, apellido y DNI se completan de
-                                                        manera automática. Luego, se selecciona el tipo de pago a
-                                                        efectuar,
-                                                        es decir, si será mediante débito, efectivo, entre otros; de ahí
-                                                        se
-                                                        elige el tipo de factura, que puede ser ticket, A, B, C, etc. En
-                                                        caso de que el cliente no desee factura quedará como “consumidor
-                                                        final” que es la opción que estará marcada por defecto.
-                                                    </p>
-                                                </i>
-                                                <i>
-                                                    <p>
-                                                        Si el cliente es nuevo, se dispone de botón “agregar nuevo
-                                                        cliente”,
-                                                        el cual va a derivar a la segunda pestaña donde estará el
-                                                        formulario
-                                                        de alta de cliente. Allí se completarán todos los datos, y al
-                                                        guardar, se regresará a la pestaña anterior. Una vez que se haya
-                                                        completado con todos los campos, se presiona “continuar”.
-                                                    </p>
-                                                </i>
-                                                <i>
-                                                    <p>
-                                                        Esta acción lo llevará a la última pestaña, donde se mostrará un
-                                                        resumen de todo lo anterior. En esta pestaña se visualizará el
-                                                        subtotal, descuento (en caso de haya por el medio de pago
-                                                        seleccionado), y el total a abonar. Por último, se presiona el
-                                                        botón
-                                                        “confirmar” y el sistema generará la factura, ticket o el tipo
-                                                        de
-                                                        factura que se haya seleccionado.
-                                                    </p>
-                                                </i>
-                                                <img src="IMAGENES/VENTASI.jpg" height="380" width="380"
-                                                    class="img-izquierda">
-                                                <img src="IMAGENES/VENTASII.jpg" height="380" width="380"
-                                                    class="img-izquierda">
-                                                <img src="IMAGENES/VENTASIII.jpg" height="380" width="380"
-                                                    class="img-izquierda">
+                                                <div
+                                                    class="col d-flex align-items-start animate__animated animate__fadeInUp">
+                                                    <img src="IMAGENES/COMPRASI.jpg" width=38%
+                                                        class="img-central">
+                                                    <img src="IMAGENES/COMPRASII.jpg" width=38%
+                                                        class="img-central">
+                                                </div>
                                                 <br>
-                                                <br>
-                                                <img src="IMAGENES/VENTASIV.jpg" height="380" width="380"
-                                                    class="img-izquierda">
+                                                <div
+                                                    class="col d-flex col d-flex align-items-start animate__animated animate__fadeInUp">
+                                                    <img src="IMAGENES/COMPRASIII.jpg" width=38%
+                                                        class="img-central">
+                                                    <img src="IMAGENES/COMPRASIV.jpg" width=38%
+                                                        class="img-central">
+                                                </div>
                                                 <br>
                                             </div>
                                         </div>
@@ -376,109 +460,39 @@
 
                                     <div class="accordion accordion-flush" id="accordionFlushExample">
                                         <div class="accordion-item">
-                                            <h2 class="accordion-header">
+                                            <div class="accordion-header">
                                                 <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseEight"
-                                                    aria-expanded="false" aria-controls="flush-collapseEight">
-                                                    <b>COMPRAS</b>
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseNine"
+                                                    aria-expanded="false" aria-controls="flush-collapseNine">
+                                                    <h4><b>REPARACIONES</b></h4>
                                                 </button>
-                                            </h2>
-                                            <div id="flush-collapseEight" class="accordion-collapse collapse"
+                                            </div>
+                                            <div id="flush-collapseNine" class="accordion-collapse collapse"
                                                 data-bs-parent="#accordionFlushExample">
                                                 <div class="accordion-body">
                                                     <i>
-                                                        <p>El formulario de compra dispondrá de un selector con
-                                                            buscador,
-                                                            donde un empleado seleccionará el producto que desee
-                                                            adquirir
-                                                            para el local, la cantidad y el precio de compra. Se
-                                                            presionará
-                                                            el botón “agregar producto” y se irá añadiendo en la tabla
-                                                            inferior, en el cual, se podrá modificar la cantidad de
-                                                            producto
-                                                            si se ha cometido algún error, además del lado derecho, se
-                                                            halla
-                                                            un botón para el producto que se ha cargado. A lado del
-                                                            buscador, se dispone de un botón “añadir”, cuya función
-                                                            consiste
-                                                            en agregar al inventario o lista de productos actuales,
-                                                            algún
-                                                            producto que no esté registrado. Allí se completarán los
-                                                            campos
-                                                            correspondientes al formulario de productos. Terminado este
-                                                            proceso se presiona “guardar”. Esta acción lo llevará a la
-                                                            pestaña de inicio, y si no hay que realizar ninguna
-                                                            modificación, se le da a “confirmar”.
+                                                        <p class="lead">
+                                                            Este reporte nos muestra la cantidad de productos
+                                                            vendidos.
+                                                            Presenta un filtro que nos permite seleccionar desde y
+                                                            hasta
+                                                            que fecha se quiere obtener la información, como así
+                                                            también
+                                                            del local.
                                                         </p>
                                                     </i>
+                                                    <img src="IMAGENES/REPARACIONESI.jpg" height="500" width="500"
+                                                        class="img-central">
+                                                    <br>
                                                     <i>
-                                                        <p>
-                                                            Esto lo dirigirá a una nueva pestaña, donde se seleccionará
-                                                            el
-                                                            proveedor al que se realizará la compra. En caso de que se
-                                                            trate
-                                                            de uno nuevo, se dispone del botón “agregar nuevo
-                                                            proveedor”, el
-                                                            cual lo llevará al formulario correspondiente, y allí se
-                                                            completarán los datos que corresponda. Terminada la acción
-                                                            se da
-                                                            a “guardar”, y retorna a la pestaña anterior. Con los campos
-                                                            completado, y el total a pagar, se da a “confirmar compra”.
+                                                        <p class="lead">
+                                                            Este reporte nos permite conocer la baja de existencia
+                                                            de
+                                                            los productos por cada local.
                                                         </p>
                                                     </i>
-                                                    <img src="IMAGENES/COMPRASI.jpg" height="380" width="380"
-                                                        class="img-izquierda">
-                                                    <img src="IMAGENES/COMPRASII.jpg" height="380" width="380"
-                                                        class="img-izquierda">
-                                                    <img src="IMAGENES/COMPRASIII.jpg" height="380" width="380"
-                                                        class="img-izquierda">
-                                                    <br>
-                                                    <br>
-                                                    <img src="IMAGENES/COMPRASIV.jpg" height="380" width="380"
-                                                        class="img-izquierda">
-                                                    <br>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <br>
-
-                                        <div class="accordion accordion-flush" id="accordionFlushExample">
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header">
-                                                    <button class="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseNine"
-                                                        aria-expanded="false" aria-controls="flush-collapseNine">
-                                                        <b>REPARACIONES</b>
-                                                    </button>
-                                                </h2>
-                                                <div id="flush-collapseNine" class="accordion-collapse collapse"
-                                                    data-bs-parent="#accordionFlushExample">
-                                                    <div class="accordion-body">
-                                                        <i>
-                                                            <p>
-                                                                Este reporte nos muestra la cantidad de productos
-                                                                vendidos.
-                                                                Presenta un filtro que nos permite seleccionar desde y
-                                                                hasta
-                                                                que fecha se quiere obtener la información, como así
-                                                                también
-                                                                del local.
-                                                            </p>
-                                                        </i>
-                                                        <img src="IMAGENES/REPARACIONESI.jpg" height="500" width="500"
-                                                            class="img-izquierda">
-                                                        <br>
-                                                        <i>
-                                                            <p>
-                                                                Este reporte nos permite conocer la baja de existencia
-                                                                de
-                                                                los productos por cada local.
-                                                            </p>
-                                                        </i>
-                                                        <img src="IMAGENES/REPARACIONESII.jpg" height="500" width="500"
-                                                            class="img-izquierda">
-                                                    </div>
+                                                    <img src="IMAGENES/REPARACIONESII.jpg" height="500" width="500"
+                                                        class="img-central">
                                                 </div>
                                             </div>
                                         </div>
@@ -490,6 +504,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <br>
