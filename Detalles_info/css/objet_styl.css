@@ -1,0 +1,15 @@
+
+
+
+section {
+  padding: 60px 0;
+}
+
+
+
+
+.card-img-top,
+.imagen {
+  height: 200px; /* Ajusta la altura deseada */
+  object-fit: cover; /* Escala la imagen para llenar el contenedor */
+}
