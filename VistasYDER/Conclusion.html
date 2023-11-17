@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PP2</title>
+    <!-- Agrega el enlace a Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/stylePaginaPruba.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="stilos.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Función reutilizable para cargar el contenido
+            function loadContent(url, containerId) {
+                fetch(url)
+                    .then(response => response.text())
+                    .then(data => {
+                        // Inserta el contenido en el contenedor especificado
+                        document.getElementById(containerId).innerHTML = data;
+                    })
+                    .catch(error => console.error('Error al cargar el contenido:', error));
+            }
+
+            // Llama a la función para cargar el encabezado
+            loadContent('../header.html', 'header-container');
+
+            // Llama a la función para cargar el pie de página
+            loadContent('../footer.html', 'footer-container');
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="header-container"></div>
+    <div class="container mt-5">
+        <div class="container-fluid text-center">
+            <div class="row align-items-start">
+                <div class="col">
+                    <div class="accordion" id="accordionExample">
+                        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 custom-title" data-aos="fade-up">
+                            CONCLUSIÓN</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <article>
+            <p class="lead" data-aos="fade-up">
+                G2 Accesorios es una entidad formosena que se dedica a la venta de accesorios de celulares, así como a
+                la reparación de estos dispositivos. Tras realizar la recopilación y análisis de la información, se ha
+                detectado que el emprendimiento cuenta con ciertas problemáticas, entre las cuales, las que se han
+                considerado para el desarrollo de este proyecto fueron: dificultades para el control de inventarios,
+                procesos de ventas, registros de reparaciones y control financiero.
+            </p>
+            <p class="lead" data-aos="fade-up">Con el desarrollo de este proyecto se busca que el local G2 Accesorios adquiera un sistema mas
+                optimizado, ya que ello permitira a la entidad agilizar los procesos internos del negocio, que van desde
+                los registros de ventas, reparaciones, gestion de inventario y obtencion de informes. Esto reduciria el
+                tiempo y recursos para realizar cada tarea, lo cual implicaria, una mayor eficiencia operativa y
+                capacidad
+                para atender a mas clientes.
+                Un sistema adecuado permitira llevar un control detallado del inventario de telefonos, piezas de
+                repuesto
+                y accesorios; facilitara el seguimiento de existencias, reposicion de productos y prevencion de perdidas
+                por falta de control. Ademas, brindara un mejor servicio al cliente con la capacidad de registrar y
+                acceder
+                facilmente a la informacion de los mismos, como historial de compras y reparaciones, con lo cual, sera
+                posible ofrecer un servicio personalizado y resolver consultas o problemas de manera mas rapida.
+                Para terminar, un sistema mas integrado brinda datos reales sobre ventas, servicios realizados,
+                productos
+                mas populares, entre otros. Esto permitira realizar un seguimiento detallado del rendimiento del negocio
+                y tomar decisiones informadas sobre estrategias de marketing, gestion de inventario, y proporcionara
+                una base solida para el crecimiento y el exito a largo plazo del negocio en un mercado altamente
+                competitivo</p>
+
+        </article>
+        <!-- <a href="index2.html" class="btn btn-primary mt-3">Volver a la página principal</a> -->
+    </div>
+    <br>
+    <div id="footer-container"></div>
+
+    <!-- Agrega el enlace a Bootstrap JS y Popper.js (requerido por Bootstrap) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+
+        });
+    </script>
+</body>
