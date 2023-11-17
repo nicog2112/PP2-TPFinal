@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* background: url('img/fondo.webp') no-repeat; */
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+    background-color: skyblue(58, 58, 216);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: black;
+}
+
+h2, h3 {
+    color: #555;
+    font-family: 'Bookman old style ', sans-serif;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%; /* Cambiado a 100% para que la imagen sea completamente receptiva */
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
