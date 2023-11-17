@@ -4,8 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Tu Sitio Web</title>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PP2</title>
@@ -22,6 +20,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             // Función reutilizable para cargar el contenido
@@ -50,7 +49,7 @@
     <div id="header-container"></div>
 
     <!-- Carrusel de Imágenes -->
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000">
+    <div id="carouselExampleFade" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
         <div class="carousel-inner" style="height: 90vh;">
             <div class="carousel-item active" style="width: 100%; height: 90vh; position: relative; overflow: hidden;">
                 <img src="img/local12.jpeg" class="d-block w-100" alt="..."
@@ -60,11 +59,13 @@
                 </div>
                 <div class="text"
                     style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white;">
-                    <h1 style="text-align: center;">Bienvenidos!!!</h1>
+                    <h1 style="text-align: center; font-size: 8em;">Bienvenidos!!!</h1>
+
                 </div>
                 <div class="carousel-caption d-none d-md-block">
-                    <p>En este sitio web abordaremos todos los temas tratados sobre el proyecto G2 ACCESORIOS</p>
-                  </div>
+                    <p style="text-align: center; font-size: 2em;">En este sitio web abordaremos todos los temas
+                        tratados sobre el proyecto G2 ACCESORIOS</p>
+                </div>
             </div>
             <div class="carousel-item" style="width: 100%; height: 90vh; position: relative; overflow: hidden;">
                 <img src="img/local13.jpeg" class="d-block w-100" alt="..."
@@ -74,12 +75,13 @@
                 </div>
                 <div class="text"
                     style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white;">
-                    <h1 style="text-align: center;">Integrantes:</h1>
-                    
+                    <h1 style="text-align: center; font-size: 5em;">Integrantes</h1>
+
                 </div>
                 <div class="carousel-caption d-none d-md-block">
-                    <p>Gauna Pablo  -  Franco Juan  -  Escobar Mauricio  -  Gonzales Joaquin  -  Benitez Angel</p>
-                  </div>
+                    <p style="text-align: center; font-size: 2em;">Gauna Pablo - Franco Juan - Escobar Mauricio -
+                        Gonzales Joaquin - Benitez Angel</p>
+                </div>
             </div>
             <div class="carousel-item" style="width: 100%; height: 90vh; position: relative; overflow: hidden;">
                 <img src="img/local2.jpeg" class="d-block w-100" alt="..."
@@ -89,8 +91,9 @@
                 </div>
                 <div class="text"
                     style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white;">
-                    <h1>La empresa</h1>
-                    <p>“G2 Accesorios” es una empresa formoseña que abrió sus puertas por primera vez el 12 de marzo del
+                    <h1 style="text-align: center; font-size: 5em;">La empresa</h1>
+                    <p style="text-align: center; font-size: 2em;">“G2 Accesorios” es una empresa formoseña que abrió
+                        sus puertas por primera vez el 12 de marzo del
                         2016. Se dedica a la venta de diferentes productos, siendo su esencia los accesorios para
                         celulares, como
                         así también las reparaciones de celulares y computadoras. Además, está registrado como punto
@@ -109,25 +112,30 @@
         </button>
     </div>
 
-    
+
 
     <!-- Mapa con Marcadores -->
-    <div class="container mt-5">
+    <div class="container mt-5" data-aos="fade-up">
+        <h2 class="pb-2 border-bottom animate__animated animate__fadeInUp" style="text-align: center;color: #00379d;">¿Donde nos
+            encontramos?</h2>
         <div id="map" style="height: 900px;">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.2509538266318!2d-58.21515862367566!3d-26.188513563336866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945caf38759d7703%3A0x4da2e3949386707b!2sSupermercado%20C%C3%A1ceres%209!5e0!3m2!1ses-419!2sar!4v1700152564532!5m2!1ses-419!2sar" width="100%" height="80%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.10957187097!2d-58.20538372389147!3d-26.193113677083446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945caf4dfdc3866f%3A0x3c182119646d9b03!2sUNaF%20-%20Facultad%20de%20Administraci%C3%B3n%2C%20Econom%C3%ADa%20y%20Negocios!5e0!3m2!1ses-419!2sar!4v1700248440456!5m2!1ses-419!2sar"
+                width="100%" height="80%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
 
     <!-- Formulario de Contacto -->
-    <div class="bg-contact100">
-        <div class="container-contact100">
+    <div class="bg-contact100" data-aos="fade-up">
+        <div class="container-contact100" data-aos="fade-up">
             <div class="wrap-contact100">
                 <div class="contact100-pic js-tilt" data-tilt>
                     <img src="img/correo.png" alt="IMG">
                 </div>
                 <form class="contact100-form validate-form">
                     <span class="contact100-form-title">
-                       Formulario de Contacto
+                        Formulario de Contacto
                     </span>
                     <div class="wrap-input100 validate-input" data-validate="Name is required">
                         <input class="input100" type="text" name="name" placeholder="Nombre">
@@ -177,13 +185,6 @@
             duration: 800,
 
         });
-    </script>
-
-    <!-- Agrega el script para el mapa con marcadores (puedes usar la API de Google Maps) -->
-
-    <script>
-        // Agrega aquí el script para el mapa con marcadores
-        // Puedes utilizar la API de Google Maps u otra solución de mapas.
     </script>
 
 </body>
